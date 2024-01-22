@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">kabete Altar Gate recoder</string>
+    <string name="title_home">View Records</string>
+    <string name="title_dashboard">Add Records</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
