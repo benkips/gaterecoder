@@ -1,10 +1,11 @@
 package com.example.kabetegaterecoder.Network
+import com.example.kabetegaterecoder.Models.MyRecordResponse
 import com.example.kabetegaterecoder.Models.MyResponse
 import retrofit2.http.*
 
 interface ApiInterface {
     companion object{
-        const val BASE_URL="http://127.0.0.1:5000/mobiadmin/"
+        const val BASE_URL="https://churchattendance.howtoinkenya.co.ke/mobiadmin/"
     }
 
 
@@ -18,4 +19,8 @@ interface ApiInterface {
         @Field("fellowship") fellowship: String?,
         ): MyResponse
 
+
+    //Getting urls
+    @GET("viewrecords")
+    suspend  fun viewrecords(): List<MyRecordResponse>
 }

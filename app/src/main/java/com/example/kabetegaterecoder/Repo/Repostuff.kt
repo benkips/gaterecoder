@@ -17,4 +17,8 @@ class Repostuff @Inject constructor(
     ) = safeApiCall {
         apiInterface.addRecords(x,y,z,q,r)
     }
+
+    suspend fun viewrecords() = safeApiCall {
+        apiInterface.viewrecords()
+    }
 }

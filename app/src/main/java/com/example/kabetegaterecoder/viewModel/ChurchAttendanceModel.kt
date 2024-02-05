@@ -12,12 +12,13 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class churchAttendanceModel @Inject constructor(private val repostuff: Repostuff) : ViewModel() {
+class ChurchAttendanceModel @Inject constructor(private val repostuff: Repostuff) : ViewModel() {
 
     private val _urlzResponse: MutableLiveData<Resource<MyResponse>> = MutableLiveData()
 
     val urlzResponse: LiveData<Resource<MyResponse>>
         get() = _urlzResponse
+
 
     fun addrecords(
         x: String,
@@ -35,4 +36,7 @@ class churchAttendanceModel @Inject constructor(private val repostuff: Repostuff
             r,
         )
     }
+
+
+
 }
